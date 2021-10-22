@@ -1659,7 +1659,10 @@ Page Loader
     border-color: transparent transparent white transparent;
     border-width: 20px;
 }
-
+.pricing .box.popular:hover .label::before{
+    border-color: transparent transparent #F6F6F6 transparent;
+}
+    
 .pricing .box .title {
     font-weight: bold;
     font-size: 25px;
