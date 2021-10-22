@@ -2380,7 +2380,7 @@ Page Loader
     }
 
     .workSteps .info .box p {
-        text-align: justify;
+        text-align: center;
     }
 
     .events .subscribe form {
