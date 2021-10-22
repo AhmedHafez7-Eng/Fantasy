@@ -1658,6 +1658,11 @@ Page Loader
     border-style: solid;
     border-color: transparent transparent white transparent;
     border-width: 20px;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
 }
 .pricing .box.popular:hover .label::before{
     border-color: transparent transparent #F6F6F6 transparent;
