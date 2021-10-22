@@ -197,6 +197,32 @@ img {
     opacity: 1;
 }
 
+.page-scroll-indicator {
+    width: 100%;
+    height: 5px;
+    background: #8ebef1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.topProgress {
+    width: 0%;
+    height: 5px;
+    background: var(--mainColor);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
 /* -----------------
 Page Loader 
 --------------*/
@@ -1323,17 +1349,23 @@ Page Loader
 }
 
 .skills .skill .progress {
-    position: relative;
     height: 30px;
     background-color: #EEE;
+    width: 100%;
 }
 
-.skills .skill .progress span {
-    position: absolute;
+.skills .skill .progress .progressBar {
     left: 0;
     top: 0;
     height: 100%;
     background-color: var(--mainColor);
+    width: 0%;
+    opacity: 0;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 
 /* Start Work Steps */
@@ -1664,10 +1696,11 @@ Page Loader
     -ms-transition: var(--mainTransition);
     -o-transition: var(--mainTransition);
 }
-.pricing .box.popular:hover .label::before{
+
+.pricing .box.popular:hover .label::before {
     border-color: transparent transparent #F6F6F6 transparent;
 }
-    
+
 .pricing .box .title {
     font-weight: bold;
     font-size: 25px;
