@@ -422,6 +422,7 @@ Page Loader
     box-shadow: 0 0 10px #DDD;
     width: 100%;
     z-index: 10000;
+    margin-top: 5px;
 }
 
 .header .container {
